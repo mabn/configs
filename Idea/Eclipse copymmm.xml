@@ -1,0 +1,6 @@
+<keymap version="1" name="Eclipse copymmm" parent="Eclipse">
+  <action id="ActivateStructureToolWindow">
+    <keyboard-shortcut first-keystroke="alt 7" />
+    <keyboard-shortcut first-keystroke="shift d" />
+  </action>
+</keymap>
