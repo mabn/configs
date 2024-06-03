@@ -1,4 +1,4 @@
-<keymap version="1" name="Eclipse ctrl vs cmd" parent="Eclipse">
+<keymap version="1" name="Eclipse-my-2024.xml" parent="Eclipse">
   <action id="$Copy">
     <keyboard-shortcut first-keystroke="meta c" />
   </action>
@@ -23,7 +23,6 @@
   <action id="CallHierarchy">
     <keyboard-shortcut first-keystroke="meta alt h" />
   </action>
-  <action id="ChangesView.Rename" />
   <action id="ChooseDebugConfiguration" />
   <action id="ChooseRunConfiguration" />
   <action id="CloseContent">
@@ -34,6 +33,10 @@
   </action>
   <action id="CommentByLineComment">
     <keyboard-shortcut first-keystroke="meta slash" />
+  </action>
+  <action id="CompareTwoFiles" />
+  <action id="Console.TableResult.DeleteRows">
+    <keyboard-shortcut first-keystroke="ctrl d" />
   </action>
   <action id="Console.TableResult.NavigateAction">
     <keyboard-shortcut first-keystroke="f12" />
@@ -46,6 +49,9 @@
   </action>
   <action id="Debugger.EditFrameSource">
     <keyboard-shortcut first-keystroke="f12" />
+  </action>
+  <action id="Diff.ShowDiff">
+    <keyboard-shortcut first-keystroke="meta d" />
   </action>
   <action id="DomCollectionControl.Edit">
     <keyboard-shortcut first-keystroke="f12" />
@@ -73,9 +79,6 @@
   </action>
   <action id="Editor Undo">
     <keyboard-shortcut first-keystroke="meta z" />
-  </action>
-  <action id="EditorDeleteLine">
-    <keyboard-shortcut first-keystroke="meta d" />
   </action>
   <action id="EditorLineEnd">
     <keyboard-shortcut first-keystroke="end" />
@@ -117,6 +120,7 @@
   <action id="ExtractMethod">
     <keyboard-shortcut first-keystroke="meta alt m" />
   </action>
+  <action id="FileChooser.GotoDesktop" />
   <action id="FileStructurePopup">
     <keyboard-shortcut first-keystroke="ctrl f3" />
     <keyboard-shortcut first-keystroke="meta o" />
@@ -127,8 +131,6 @@
   <action id="FindInPath">
     <keyboard-shortcut first-keystroke="meta h" />
   </action>
-  <action id="Git.Rename.Local.Branch" />
-  <action id="Git.Reword.Commit" />
   <action id="GoOpenSettings">
     <keyboard-shortcut first-keystroke="f12" />
   </action>
@@ -209,7 +211,6 @@
   </action>
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="meta alt r" />
-    <keyboard-shortcut first-keystroke="shift alt r" />
   </action>
   <action id="Replace">
     <keyboard-shortcut first-keystroke="meta f" />
@@ -226,7 +227,7 @@
   <action id="RunToCursor">
     <keyboard-shortcut first-keystroke="meta r" />
   </action>
-  <action id="ShelvedChanges.Rename" />
+  <action id="SendEOF" />
   <action id="Vcs.EditSource">
     <keyboard-shortcut first-keystroke="f12" />
   </action>

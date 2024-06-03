@@ -1,4 +1,4 @@
-<keymap version="1" name="Eclipse ctrl vs cmd" parent="Eclipse">
+<keymap version="1" name="Eclipse ctrl vs cmd-modified" parent="Eclipse">
   <action id="$Copy">
     <keyboard-shortcut first-keystroke="meta c" />
   </action>
@@ -10,6 +10,7 @@
   </action>
   <action id="$Redo">
     <keyboard-shortcut first-keystroke="meta y" />
+    <keyboard-shortcut first-keystroke="shift meta z" />
   </action>
   <action id="$SelectAll">
     <keyboard-shortcut first-keystroke="meta a" />
@@ -19,21 +20,29 @@
   </action>
   <action id="AutoIndentLines">
     <keyboard-shortcut first-keystroke="meta i" />
+    <keyboard-shortcut first-keystroke="ctrl i" />
   </action>
-  <action id="CallHierarchy">
-    <keyboard-shortcut first-keystroke="meta alt h" />
-  </action>
-  <action id="ChangesView.Rename" />
+  <action id="ChangesView.SetDefault" />
   <action id="ChooseDebugConfiguration" />
   <action id="ChooseRunConfiguration" />
-  <action id="CloseContent">
+  <action id="CloseActiveTab">
     <keyboard-shortcut first-keystroke="meta w" />
   </action>
-  <action id="CodeCompletion">
-    <keyboard-shortcut first-keystroke="meta space" />
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
   <action id="CommentByLineComment">
-    <keyboard-shortcut first-keystroke="meta slash" />
+    <keyboard-shortcut first-keystroke="ctrl slash" />
+  </action>
+  <action id="CompareTwoFiles" />
+  <action id="Compile" />
+  <action id="CompileFile" />
+  <action id="Console.Open" />
+  <action id="Console.TableResult.ColumnsList">
+    <keyboard-shortcut first-keystroke="ctrl o" />
+  </action>
+  <action id="Console.TableResult.DeleteRows">
+    <keyboard-shortcut first-keystroke="ctrl d" />
   </action>
   <action id="Console.TableResult.NavigateAction">
     <keyboard-shortcut first-keystroke="f12" />
@@ -42,10 +51,13 @@
     <keyboard-shortcut first-keystroke="f12" />
   </action>
   <action id="DebugClass">
-    <keyboard-shortcut first-keystroke="shift meta f9" />
+    <keyboard-shortcut first-keystroke="shift ctrl f9" />
   </action>
   <action id="Debugger.EditFrameSource">
     <keyboard-shortcut first-keystroke="f12" />
+  </action>
+  <action id="Diff.ShowDiff">
+    <keyboard-shortcut first-keystroke="meta d" />
   </action>
   <action id="DomCollectionControl.Edit">
     <keyboard-shortcut first-keystroke="f12" />
@@ -67,15 +79,13 @@
   </action>
   <action id="Editor Redo">
     <keyboard-shortcut first-keystroke="meta y" />
+    <keyboard-shortcut first-keystroke="shift meta z" />
   </action>
   <action id="Editor SelectAll">
     <keyboard-shortcut first-keystroke="meta a" />
   </action>
   <action id="Editor Undo">
     <keyboard-shortcut first-keystroke="meta z" />
-  </action>
-  <action id="EditorDeleteLine">
-    <keyboard-shortcut first-keystroke="meta d" />
   </action>
   <action id="EditorLineEnd">
     <keyboard-shortcut first-keystroke="end" />
@@ -93,77 +103,58 @@
     <keyboard-shortcut first-keystroke="shift home" />
     <keyboard-shortcut first-keystroke="shift ctrl a" />
   </action>
-  <action id="EditorNextWord">
-    <keyboard-shortcut first-keystroke="meta right" />
-  </action>
+  <action id="EditorNextWord" />
   <action id="EditorNextWordInDifferentHumpsMode">
     <keyboard-shortcut first-keystroke="shift meta alt right" />
-  </action>
-  <action id="EditorNextWordWithSelection">
-    <keyboard-shortcut first-keystroke="shift meta right" />
   </action>
   <action id="EditorPasteSimple">
     <keyboard-shortcut first-keystroke="shift meta alt v" />
   </action>
-  <action id="EditorPreviousWord">
-    <keyboard-shortcut first-keystroke="meta left" />
-  </action>
-  <action id="EditorPreviousWordWithSelection">
-    <keyboard-shortcut first-keystroke="shift meta left" />
-  </action>
+  <action id="EditorPreviousWord" />
   <action id="ExternalSystem.OpenConfig">
     <keyboard-shortcut first-keystroke="f12" />
   </action>
   <action id="ExtractMethod">
     <keyboard-shortcut first-keystroke="meta alt m" />
   </action>
+  <action id="FileChooser.GotoDesktop" />
+  <action id="FileChooser.TogglePathBar" />
   <action id="FileStructurePopup">
-    <keyboard-shortcut first-keystroke="ctrl f3" />
-    <keyboard-shortcut first-keystroke="meta o" />
+    <keyboard-shortcut first-keystroke="ctrl o" />
   </action>
   <action id="Find">
-    <keyboard-shortcut first-keystroke="meta f" />
+    <keyboard-shortcut first-keystroke="ctrl f" />
   </action>
-  <action id="FindInPath">
-    <keyboard-shortcut first-keystroke="meta h" />
-  </action>
-  <action id="Git.Rename.Local.Branch" />
-  <action id="Git.Reword.Commit" />
+  <action id="ForceOthersToFollowAction" />
   <action id="GoOpenSettings">
     <keyboard-shortcut first-keystroke="f12" />
   </action>
   <action id="GotoAction">
     <keyboard-shortcut first-keystroke="shift meta a" />
   </action>
-  <action id="GotoClass">
-    <keyboard-shortcut first-keystroke="shift meta t" />
-  </action>
   <action id="GotoDeclaration">
     <keyboard-shortcut first-keystroke="f3" />
     <mouse-shortcut keystroke="meta button1" />
   </action>
-  <action id="GotoFile">
-    <keyboard-shortcut first-keystroke="shift meta r" />
-  </action>
   <action id="GotoImplementation">
     <keyboard-shortcut first-keystroke="meta alt b" />
-    <keyboard-shortcut first-keystroke="meta t" />
-  </action>
-  <action id="GotoLine">
-    <keyboard-shortcut first-keystroke="meta l" />
+    <keyboard-shortcut first-keystroke="ctrl t" />
   </action>
   <action id="GotoTest">
-    <keyboard-shortcut first-keystroke="ctrl j" />
+    <keyboard-shortcut first-keystroke="meta j" />
+  </action>
+  <action id="Graph.ActualSize">
+    <keyboard-shortcut first-keystroke="ctrl divide" />
   </action>
   <action id="Graph.Faces.OpenSelectedPages">
     <keyboard-shortcut first-keystroke="f12" />
   </action>
+  <action id="Images.Editor.ActualSize">
+    <keyboard-shortcut first-keystroke="ctrl divide" />
+  </action>
   <action id="IncrementalSearch" />
   <action id="IntroduceConstant">
     <keyboard-shortcut first-keystroke="meta alt c" />
-  </action>
-  <action id="IntroduceField">
-    <keyboard-shortcut first-keystroke="meta alt f" />
   </action>
   <action id="IntroduceParameter">
     <keyboard-shortcut first-keystroke="meta alt p" />
@@ -171,9 +162,11 @@
   <action id="IntroduceVariable">
     <keyboard-shortcut first-keystroke="meta alt v" />
   </action>
+  <action id="Jdbc.OpenConsole.Any" />
   <action id="Jdbc.OpenEditor">
     <keyboard-shortcut first-keystroke="f12" />
   </action>
+  <action id="Jpa.OpenConsole" />
   <action id="MethodHierarchy">
     <keyboard-shortcut first-keystroke="shift meta h" />
   </action>
@@ -185,14 +178,17 @@
     <keyboard-shortcut first-keystroke="f12" />
   </action>
   <action id="OptimizeImports">
-    <keyboard-shortcut first-keystroke="shift meta o" />
+    <keyboard-shortcut first-keystroke="shift ctrl o" />
   </action>
+  <action id="PackageFile" />
   <action id="ParameterInfo">
     <keyboard-shortcut first-keystroke="meta p" />
+    <keyboard-shortcut first-keystroke="ctrl p" />
   </action>
+  <action id="Print" />
   <action id="QuickChangeScheme" />
   <action id="QuickJavaDoc">
-    <keyboard-shortcut first-keystroke="meta j" />
+    <keyboard-shortcut first-keystroke="ctrl j" />
   </action>
   <action id="RecentFiles">
     <keyboard-shortcut first-keystroke="meta e" />
@@ -201,15 +197,14 @@
     <keyboard-shortcut first-keystroke="shift meta e" />
   </action>
   <action id="ReformatCode">
-    <keyboard-shortcut first-keystroke="shift meta f" />
     <keyboard-shortcut first-keystroke="meta alt l" />
+    <keyboard-shortcut first-keystroke="shift ctrl f" />
   </action>
   <action id="RemoteHostView.EditSource">
     <keyboard-shortcut first-keystroke="f12" />
   </action>
   <action id="RenameElement">
-    <keyboard-shortcut first-keystroke="meta alt r" />
-    <keyboard-shortcut first-keystroke="shift alt r" />
+    <keyboard-shortcut first-keystroke="ctrl alt r" />
   </action>
   <action id="Replace">
     <keyboard-shortcut first-keystroke="meta f" />
@@ -217,19 +212,26 @@
   <action id="Run">
     <keyboard-shortcut first-keystroke="shift f10" />
   </action>
-  <action id="RunClass">
-    <keyboard-shortcut first-keystroke="shift meta f10" />
-  </action>
   <action id="RunDashboard.EditConfiguration">
     <keyboard-shortcut first-keystroke="f12" />
   </action>
   <action id="RunToCursor">
     <keyboard-shortcut first-keystroke="meta r" />
   </action>
-  <action id="ShelvedChanges.Rename" />
+  <action id="SendEOF" />
+  <action id="ShowFilterPopup" />
+  <action id="Switcher">
+    <keyboard-shortcut first-keystroke="shift ctrl tab" />
+  </action>
+  <action id="Terminal.ClearBuffer" />
+  <action id="Terminal.NewTab" />
+  <action id="UsageFiltering.Imports" />
+  <action id="UsageFiltering.WriteAccess" />
+  <action id="UsageGrouping.FileStructure" />
   <action id="Vcs.EditSource">
     <keyboard-shortcut first-keystroke="f12" />
   </action>
+  <action id="Vcs.Log.FocusTextFilter" />
   <action id="Vcs.Log.GoToRef" />
   <action id="Vcs.ReformatCommitMessage">
     <keyboard-shortcut first-keystroke="shift meta f" />
@@ -240,4 +242,5 @@
   <action id="XDebugger.JumpToSource">
     <keyboard-shortcut first-keystroke="f12" />
   </action>
+  <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleItalicAction" />
 </keymap>
